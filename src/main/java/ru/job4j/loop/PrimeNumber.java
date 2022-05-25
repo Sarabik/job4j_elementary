@@ -4,9 +4,6 @@ public class PrimeNumber {
 
     public static int calc(int finish) {
         int count = 0;
-        if (finish == 0 || finish == 1) {
-            return count;
-        }
         for (int number = 2; number <= finish; number++) {
             if (CheckPrimeNumber.check(number)) {
                 count++;
