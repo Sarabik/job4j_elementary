@@ -26,4 +26,15 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWin(char[][] board) {
+        char[] diagonal = extractDiagonal(board);
+        int indexOfX = 0;
+        for (int index = 0; index < diagonal.length; index++) {
+            if (diagonal[index] == 'X') {
+                indexOfX = index;
+            }
+        }
+        return monoVertical(board, indexOfX) || monoHorizontal(board, indexOfX);
+    }
 }
