@@ -1,6 +1,7 @@
-package ru.job4j.condition.additional;
+package condition.additional;
 
 import org.junit.Test;
+import ru.job4j.condition.additional.AttackRook;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
